@@ -4,8 +4,16 @@ require('../src/next-unique');
 
 describe('src/next-unique', function () {
   it('unique simple array', function () {
-    var array1 = [1,2,4,5,6,7,1,2];
-    assert.deepEqual([1,2,4,5,6,7], nx.unique( array1 ));
+    var array1 = [1, 2, 4, 5, 6, 7, 1, 2];
+    assert.deepEqual([1, 2, 4, 5, 6, 7], nx.unique(array1));
+  });
+
+
+  it('unique: append & unique', function () {
+    var arr1 = [1, 2, 4, 5, 6, 7, 1, 2];
+    var arr2 = [2,4,5];
+    var result = [].concat(arr2, arr1);
+    assert.deepEqual([2, 4, 5, 1, 6, 7], nx.unique(result));
   });
 
 

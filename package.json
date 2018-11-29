@@ -1,6 +1,6 @@
 {
   "name": "next-unique",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Unique for array based on next.",
   "homepage": "https://github.com/afeiship/next-unique",
   "author": {
@@ -8,7 +8,8 @@
     "email": "1290657123@qq.com"
   },
   "scripts": {
-    "build": "gulp"
+    "build": "gulp",
+    "test": "mocha"
   },
   "main": "dist/next-unique.js",
   "license": "MIT",
@@ -18,10 +19,10 @@
     "gulp-concat": "^2.6.0",
     "gulp-load-plugins": "^1.2.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2",
     "gulp-size": "^2.1.0",
     "gulp-uglify": "^2.1.2",
     "mocha": "^3.5.0",
+    "prettier": "^1.15.2",
     "yargs": "^4.7.1"
   },
   "dependencies": {
