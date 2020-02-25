@@ -1,12 +1,11 @@
-(function () {
-
+(function() {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('next-js-core2');
+  var nx = global.nx || require('@feizheng/next-js-core2');
 
-  nx.unique = function (inArray, inIdKey) {
+  nx.unique = function(inArray, inIdKey) {
     var result = [];
     var map = {};
-    nx.each(inArray, function (_, value) {
+    nx.each(inArray, function(_, value) {
       var mapKey = inIdKey ? value[inIdKey] : value;
       var mapValue = map[mapKey];
       if (!mapValue) {
@@ -20,5 +19,4 @@
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = nx.unique;
   }
-
-}());
+})();
