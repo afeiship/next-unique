@@ -1,20 +1,20 @@
 const nx = require('@feizheng/next-js-core2');
 require('../src/next-unique');
 
-describe('src/next-unique', function() {
-  test('unique simple array', function() {
+describe('api.basic test', () => {
+  test('unique simple array', function () {
     var array1 = [1, 2, 4, 5, 6, 7, 1, 2];
     expect([1, 2, 4, 5, 6, 7]).toEqual(nx.unique(array1));
   });
 
-  test('unique: append & unique', function() {
+  test('unique: append & unique', function () {
     var arr1 = [1, 2, 4, 5, 6, 7, 1, 2];
     var arr2 = [2, 4, 5];
     var result = [].concat(arr2, arr1);
     expect([2, 4, 5, 1, 6, 7]).toEqual(nx.unique(result));
   });
 
-  test('unique object array', function() {
+  test('unique object array', function () {
     var array2 = [
       {
         id: 1,
