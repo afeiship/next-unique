@@ -1,15 +1,15 @@
 /*!
- * name: @feizheng/next-unique
+ * name: @jswork/next-unique
  * description: Unique for array based on next.
  * homepage: https://github.com/afeiship/next-unique
- * version: 1.0.1
- * date: 2020-06-27T05:16:51.431Z
+ * version: 1.0.0
+ * date: 2020-11-21 08:39:44
  * license: MIT
  */
 
 (function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@feizheng/next-js-core2');
+  var nx = global.nx || require('@jswork/next');
 
   nx.unique = function (inArray, inIdKey) {
     var result = [];
@@ -29,5 +29,3 @@
     module.exports = nx.unique;
   }
 })();
-
-//# sourceMappingURL=next-unique.js.map
