@@ -39,5 +39,22 @@
 
       expect(result.map((item) => item.id)).toEqual(resKeys);
     });
+
+    test('uniq object by deepth key', () => {
+      const arr = [
+        { name: 'fz', value: { key: 1 } },
+        { name: 'fz', value: { key: 2 } },
+        { name: 'fz', value: { key: 3 } },
+        { name: 'fz', value: { key: 1 } }
+      ];
+
+      const result = nx.unique(arr, 'value.key');
+      expect(result).toEqual([
+        { name: 'fz', value: { key: 1 } },
+        { name: 'fz', value: { key: 2 } },
+        { name: 'fz', value: { key: 3 } }
+      ]);
+
+    });
   });
 })();

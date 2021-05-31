@@ -6,7 +6,7 @@
     var result = [];
     var map = {};
     inArray.forEach(function (value) {
-      var mapKey = inIdKey ? value[inIdKey] : value;
+      var mapKey = inIdKey ? nx.get(value, inIdKey) : value;
       var mapValue = map[mapKey];
       if (!mapValue) {
         map[mapKey] = true;
