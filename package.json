@@ -1,6 +1,6 @@
 {
   "name": "@jswork/next-unique",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Unique for array based on next.",
   "homepage": "https://js.work",
   "files": [
@@ -53,5 +53,10 @@
     "src/**/*.{js,jsx}": [
       "npm run pretty"
     ]
-  }
+  },
+  "keywords": [
+    "unique",
+    "next",
+    "uniq"
+  ]
 }
