@@ -8,17 +8,14 @@
 
 ## installation
 ```bash
-npm install -S @jswork/next-unique
+yarn add @jswork/next-unique
 ```
 
 ## usage
 ```js
 import '@jswork/next-unique';
 
-const array1 = [1,2,4,5,6,7,1,2];
-nx.unique(array1);
-
-//[1,2,3,4,5,6,7]
+//DOCS here!
 ```
 
 ## license
