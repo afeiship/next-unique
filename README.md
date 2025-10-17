@@ -8,14 +8,35 @@
 
 ## installation
 ```bash
-yarn add @jswork/next-unique
+npm install -S @jswork/next-unique
 ```
 
 ## usage
 ```js
 import '@jswork/next-unique';
 
-//DOCS here!
+// Simple array
+const array1 = [1, 2, 4, 5, 6, 7, 1, 2];
+nx.unique(array1);
+// => [1, 2, 4, 5, 6, 7]
+
+// Object array with key
+const array2 = [
+  { id: 1, value: 'value1' },
+  { id: 2, value: 'value2' },
+  { id: 1, value: 'value1' }
+];
+nx.unique(array2, 'id');
+// => [{ id: 1, value: 'value1' }, { id: 2, value: 'value2' }]
+
+// Deep object array
+const array3 = [
+  { user: { info: { id: 1 }, name: 'John' } },
+  { user: { info: { id: 2 }, name: 'Jane' } },
+  { user: { info: { id: 1 }, name: 'Bob' } }
+];
+nx.unique(array3, 'user.info.id');
+// => [{ user: { info: { id: 1 }, name: 'John' } }, { user: { info: { id: 2 }, name: 'Jane' } }]
 ```
 
 ## license
