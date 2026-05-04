@@ -1,4 +1,4 @@
-require('../src');
+import '../src';
 
 describe('api.basic test', () => {
   test('unique simple array', function () {

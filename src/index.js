@@ -13,8 +13,8 @@ nx.unique = function (inArray, inIdKey) {
   return result;
 };
 
-if (typeof module !== 'undefined' && module.exports && typeof wx === 'undefined') {
-  module.exports = nx.unique;
-}
+// if (typeof module !== 'undefined' && module.exports && typeof wx === 'undefined') {
+//   module.exports = nx.unique;
+// }
 
 export default nx.unique;
